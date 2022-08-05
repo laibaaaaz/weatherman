@@ -10,7 +10,7 @@ def year_wise_result(year):
         max_hum_date=[]
         months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         for i in range(len(months)):
-            with open(f"C:\\Users\\DELL\\Desktop\\Internship\\Python\\practice\\weatherman\\murree\\Murree_weather_{year}_{months[i]}.txt", "r") as file:
+            with open(f"murree\\Murree_weather_{year}_{months[i]}.txt", "r") as file:
                 csvreader = list(csv.reader(file))
                 #for i in csvreader:
                 # print(i)
@@ -80,7 +80,7 @@ def year_wise_result(year):
 
 def month_wise_result(year, month):
 
-        with open(f"C:\\Users\\DELL\\Desktop\\Internship\\Python\\practice\\weatherman\\murree\\Murree_weather_{year}_{month}.txt", "r") as file:
+        with open(f"murree\\Murree_weather_{year}_{month}.txt", "r") as file:
                 csvreader = list(csv.reader(file))
             # for i in csvreader:
                 #  print(i)
@@ -139,7 +139,7 @@ def month_wise_result(year, month):
 def graph(year, month):
     try:
         print(f"{month} {year}")
-        with open(f"C:\\Users\\DELL\\Desktop\\Internship\\Python\\practice\\weatherman\\murree\\Murree_weather_{year}_{month}.txt", "r") as file:
+        with open(f"\\murree\\Murree_weather_{year}_{month}.txt", "r") as file:
             csvreader = list(csv.reader(file))
             # for i in csvreader:
                 #  print(i)
